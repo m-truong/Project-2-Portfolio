@@ -11,4 +11,4 @@ const projectSchema = new mongoose.Schema({
 const Project = mongoose.model('Project', projectSchema);
 
 // shortcut
-exports = Project;
+module.exports = Project;

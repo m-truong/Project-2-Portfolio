@@ -15,7 +15,6 @@ const methodOverride  = require('method-override');
 const app = express ();
 const db = mongoose.connection; // allows you not to type it multiple times
 // const show = console.log
-// const c = console.log
 
 //___________________
 //Port
@@ -40,11 +39,10 @@ db.on('open' , ()=>{console.log("Connected to MongoDB Atlas")});
 //___________________
 
 app.use(express.static('public'));
-// populates req.body with parsed info from forms - if no data from forms will return an empty object {}
 app.use(express.urlencoded({ extended: true }));// extended: false - does not allow nested objects in query strings
-app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
-//use method override
-app.use(methodOverride('_method')); // allow POST, PUT and DELETE from a form
+// app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
+
+app.use(methodOverride('_method')); 
 
 // __________________
 // VIEW ENGINE
@@ -63,7 +61,7 @@ app.use('/projects', projectController)
 //___________________
 //localhost:3000 - Home
 app.get('/' , (req, res) => {
-  res.send('Home');
+  res.redirect('/projects');
 });
 // About
 app.get('/about' , (req, res) => {

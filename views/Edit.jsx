@@ -64,4 +64,4 @@ class Edit extends React.Component {
   }
 }
 
-exports = Edit;
+module.exports = Edit;

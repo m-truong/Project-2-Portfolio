@@ -41,4 +41,4 @@ class Show extends React.Component {
   }
 }
 
-exports = Show;
+module.exports = Show;

@@ -17,6 +17,7 @@ class Layout extends React.Component {
       <html>
         <head>
           <meta charSet="utf-8" />
+          {/* <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: fonts.gstatic.com;"/> */}
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -28,6 +29,7 @@ class Layout extends React.Component {
             href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
             rel="stylesheet"
           ></link>
+          
           {/* Bootstrap */}
           <link
             rel="stylesheet"
@@ -47,22 +49,16 @@ class Layout extends React.Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto"> 
+              <Nav className="mr-auto">
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
                 {/* <Nav.Link href="/projects">Projects</Nav.Link> */}
                 <NavDropdown title="Projects" id="basic-nav-dropdown">
                   <NavDropdown.Item href="">Index</NavDropdown.Item>
-                  <NavDropdown.Item href="">
-                    Create
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="">
-                    Something
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="">Create</NavDropdown.Item>
+                  <NavDropdown.Item href="">Something</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="">
-                    Separated link
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="">Separated link</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
               <Form inline>
@@ -105,4 +101,4 @@ class Layout extends React.Component {
   }
 }
 
-exports = Layout;
+module.exports = Layout;

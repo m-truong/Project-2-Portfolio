@@ -17,7 +17,7 @@ const Project = require('../models/project.js')
  */
 
 // Index'/<nameOfResource>' GET ex. app.get('/projects'...) // Index should have ALL THE BUTTONS
-router.get('/projects', (req, res) => {
+router.get('/', (req, res) => {
     Project.find({}, (err, allProjects) => {
         if (err) {
             res.send(err)
@@ -33,12 +33,12 @@ router.get('/projects', (req, res) => {
 });
 
 // New '/<nameOfResorce>/new' GET ex. app.get('/projects/new')
-router.get('/projects/new', (req, res) => {
+router.get('/new', (req, res) => {
     res.render('New');
 });
 
 // Delete '/<nameOfResource/:id' DELETE ex. app.delete('/projects/:id')
-router.delete('/projects/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     Project.findByIdAndRemove(req.params.id, (err, foundProject) => {
         if (err) {
             res.send(err)
@@ -50,7 +50,7 @@ router.delete('/projects/:id', (req, res) => {
 });
 
 // Update '/<nameOfResource/:id' PUT ex. app.put('/projects/:id')
-router.put('/projects/:id', (req, res) => {
+router.put('/:id', (req, res) => {
     // {new: true}
     Project.findByIdAndUpdate(req.params.id, req.body, {
         new: true
@@ -64,7 +64,7 @@ router.put('/projects/:id', (req, res) => {
 });
 
 // Create '/<nameOfResource>/' POST ex. app.post('/projects/')
-router.post('/projects/', (req, res) => {
+router.post('/', (req, res) => {
     Project.create(req.body, (err, createdProject) => {
         if (err) {
             res.send(err);
@@ -75,7 +75,7 @@ router.post('/projects/', (req, res) => {
 });
 
 // Edit '/<nameOfResource>/:id/edit' GET ex. app.get('/projects/:id/edit')
-router.get('/projects/:id/edit', (req, res) => {
+router.get('/:id/edit', (req, res) => {
     Project.findById(req.params.id, (err, foundProject) => {
         if (err) {
             res.send(err)
@@ -88,7 +88,7 @@ router.get('/projects/:id/edit', (req, res) => {
 });
 
 // Show '/<nameOfResource>/:id' GET ex. app.get('/projects/:id')
-router.get('/projects/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     Project.findById(req.params.id, (err, foundProject) => {
         if (err) {
             res.send(err)
@@ -100,4 +100,4 @@ router.get('/projects/:id', (req, res) => {
     });
 });
 
-exports = router;
+module.exports = router;
