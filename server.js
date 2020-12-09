@@ -59,7 +59,7 @@ const projectController = require('./controllers/projectController.js')
 app.use('/projects', projectController)
 
 //___________________
-// RESTful Routes with projects to Controllers directory
+// Non-Rest Routes
 //___________________
 //localhost:3000 - Home
 app.get('/' , (req, res) => {

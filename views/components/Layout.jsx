@@ -50,20 +50,20 @@ class Layout extends React.Component {
               <Nav className="mr-auto"> 
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
-                <Nav.Link href="/projects">Contact</Nav.Link>
-                {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
+                {/* <Nav.Link href="/projects">Projects</Nav.Link> */}
+                <NavDropdown title="Projects" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="">Index</NavDropdown.Item>
+                  <NavDropdown.Item href="">
+                    Create
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item href="">
                     Something
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
+                  <NavDropdown.Item href="">
                     Separated link
                   </NavDropdown.Item>
-                </NavDropdown> */}
+                </NavDropdown>
               </Nav>
               <Form inline>
                 <FormControl
@@ -77,7 +77,8 @@ class Layout extends React.Component {
           </Navbar>
           <header>
             <h1 id="" className="">
-              Michael Truong Full Stack Web Developer
+              {/* Michael Truong Full Stack Web Developer */}
+              {this.props.title}
             </h1>
           </header>
           {this.props.children}
