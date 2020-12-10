@@ -17,20 +17,27 @@ li {
     list-style: none;
 }
 
+.container-fluid {
+    padding: 7% 15%;
+}
+
+ul.info-box {
+    padding-right: 50px;
+}
+
 div.contact-container {
     background-color: gainsboro;
     box-shadow: 0 4px 8px rgb(26, 31, 39);
     border-radius: 15px;
+    font-size: 17px;
+    line-height: 3;
     max-width: 960px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 250px;
+    padding: 30px;
 }
-
 
 .social-icon {
     margin: 20px 10px;
 }
 
-footer {
-    margin-bottom: 10px;
-}

@@ -13,13 +13,20 @@ body {
     background-color: whitesmoke;
 }
 
+.container-fluid {
+    padding: 7% 15%;
+}
+
 div.about-container {
     background-color: whitesmoke;
     box-shadow: 0 4px 8px rgb(26, 31, 39);
     border-radius: 15px;
+    font-size: 20px;
+    padding: 40px;
     margin-top: 200px;
-    
+    line-height: 3;
 } 
+
 div.text-about-container {
     line-height: 1.5;
 }
@@ -36,8 +43,5 @@ div.text-about-container {
     margin: 20px 10px;
 }
 
-footer {
-    margin-bottom: 10px;
-}
 
 
