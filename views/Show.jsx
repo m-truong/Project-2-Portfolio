@@ -15,7 +15,7 @@ class Show extends React.Component {
         <main>
           <Container>
             <Row className="justify-content-md-center">
-              <Card style={{ width: "18rem" }}>
+              <Card className="card-border" style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={project.image} />
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
@@ -26,7 +26,7 @@ class Show extends React.Component {
                   <hr />
                   <Button
                     href={project.github}
-                    variant="primary"
+                    variant="primary" target="_blank"
                   >
                     Go to Github
                   </Button>

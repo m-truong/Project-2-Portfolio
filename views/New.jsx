@@ -15,7 +15,7 @@ class New extends React.Component {
         <main>
           <Container>
             <Row className="justify-content-center">
-              <Form action="/projects" method="POST" role="form">
+              <Form className="form-style" action="/projects" method="POST" role="form">
                 <Form.Group as={Col} controlId="">
                   <Form.Label>Project Title</Form.Label>
                   <Form.Control

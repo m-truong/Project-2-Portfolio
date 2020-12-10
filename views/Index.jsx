@@ -17,7 +17,7 @@ class Index extends React.Component {
 
         <main>
           <Container>
-            <Row className="justify-content-around">
+            <Row className="justify-content-between align-content-between">
               {this.props.projects.map((project, i) => {
                 return (
                   <Card className="card-border" style={{ width: "18rem" }}>

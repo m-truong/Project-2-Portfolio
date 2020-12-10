@@ -11,3 +11,12 @@ body {
     background-color: whitesmoke;
 }
 
+.card-border {
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgb(26, 31, 39);
+    border-radius: 15px;
+}
+
+.form-style {
+    margin-top: 50px;
+}

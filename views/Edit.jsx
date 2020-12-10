@@ -15,7 +15,7 @@ class Edit extends React.Component {
         <main>
           <Container>
             <Row className="justify-content-center">
-              <Form action={`/projects/${this.props.project._id}?_method=PUT`} method="POST" role="form">
+              <Form className="form-style" action={`/projects/${this.props.project._id}?_method=PUT`} method="POST" role="form">
                 <Form.Group as={Col} controlId="">
                   <Form.Label>Project Title</Form.Label>
                   <Form.Control

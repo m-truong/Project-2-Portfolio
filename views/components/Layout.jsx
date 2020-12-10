@@ -35,9 +35,7 @@ class Layout extends React.Component {
         <body>
           <Navbar bg="light" expand="lg">
             <Navbar.Brand href="/">Portfolio Home</Navbar.Brand>
-
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link href="/about">About</Nav.Link>
@@ -51,10 +49,7 @@ class Layout extends React.Component {
               {this.props.title}
             </h1>
           </header>
-
           {this.props.children}
-
-          <footer> copyright Michael Truong </footer>
           {/* Scripts */}
           <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
