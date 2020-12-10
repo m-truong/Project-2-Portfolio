@@ -1,0 +1,116 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+/* HTML/CSS/JS Images */
+div img {
+ max-width: 250px;
+ max-height: 250px;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+nav > a.font-color {
+    color: black;
+} 
+
+/* Headings */
+.heading-hero-image {
+    background-image: url("https://josephliu.co/wp-content/uploads/2019/06/j-kelly-brito-256889-unsplash.jpg");
+    background-size: cover;
+}
+
+.big-heading {
+    font-family: "Ubuntu";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: black;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Sections */
+.contact-me-section {
+    color: black;
+}
+
+.colored-section {
+    background-color: lightslategray;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 2.2rem;
+    font-family: "Ubuntu";
+    color: black;
+}
+
+/* Title Section */
+#title {
+    color: black;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+ 
+
+/* Programming Languages Section */
+#programming-languages {
+    position: relative;
+}
+
+.programming-languages-title {
+    font-size: 1.5rem;
+}
+
+.programming-languages-box {
+    padding: 4.5%;
+}
+
+/* Footer Section */
+.social-icon {
+    margin: 20px 10px;
+}
+

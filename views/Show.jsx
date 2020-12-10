@@ -2,10 +2,10 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
+import Form from "react-bootstrap/Form"
 
 const React = require("react");
 const Layout = require("./components/Layout.jsx");
-
 
 class Show extends React.Component {
   render() {
@@ -16,21 +16,36 @@ class Show extends React.Component {
           <Container>
             <Row className="justify-content-md-center">
               <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src={project.img} />
+                <Card.Img variant="top" src={project.image} />
                 <Card.Body>
-                  <Card.Title>{project.name}</Card.Title>
-                  <hr/>
+                  <Card.Title>{project.title}</Card.Title>
+                  <hr />
                   <Card.Text className="card-text">
                     {project.description}
                   </Card.Text>
                   <hr />
-                  <Button href="" variant="primary">
+                  <Button
+                    href={project.github}
+                    variant="primary"
+                  >
+                    Go to Github
+                  </Button>
+                  <hr />
+                  <Button
+                    href={`/projects/${project._id}/edit`}
+                    variant="primary"
+                  >
                     Edit Project
                   </Button>
                   <hr />
-                  <Button href="" variant="info">
-                    Delete Project
-                  </Button>
+                  <Form
+                    action={`/projects/${project._id}?_method=DELETE`}
+                    method="POST"
+                  >
+                    <Button type="submit" variant="info">
+                      Delete Project
+                    </Button>
+                  </Form>
                 </Card.Body>
               </Card>
             </Row>

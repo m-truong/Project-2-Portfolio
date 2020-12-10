@@ -1,12 +1,13 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     font-family: 'Mukta', sans-serif;
 }
 
 body {
     text-align: center;
-    background-color:whitesmoke;
-} 
+    background-color: whitesmoke;
+}
+

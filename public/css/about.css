@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: #444 url("https://hrmcdn-13a1c.kxcdn.com/images/hr-sg/content-images/priya-june-2020-patrick-tay-work-from-home-lead-istock.jpg") fixed center no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+div.about-container {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgb(26, 31, 39);
+    border-radius: 15px;
+    margin-top: 200px;
+    
+} 
+div.text-about-container {
+    line-height: 1.5;
+}
+
+.container-wrap {
+    max-width: 960px;
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 1em;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+footer {
+    margin-bottom: 10px;
+}
+
+

@@ -10,11 +10,8 @@ const Layout = require("./components/Layout.jsx");
 
 class Edit extends React.Component {
   render() {
-
-    // const { name, readyToEat, color, _id } = this.props.project;
-
     return (
-      <Layout title={`Edit ${this.props.project.name.toUpperCase()} Page`}>
+      <Layout title={`Edit ${this.props.project.title} Page`}>
         <main>
           <Container>
             <Row className="justify-content-center">
@@ -25,7 +22,7 @@ class Edit extends React.Component {
                     name="title"
                     type="text"
                     placeholder="Enter project name"
-                    defaultValue={this.props.project.name}
+                    defaultValue={this.props.project.title}
                   />
                 </Form.Group>
                 <Form.Group as={Col} controlId="">

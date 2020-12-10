@@ -5,10 +5,8 @@ const projectSchema = new mongoose.Schema({
     description: String,
     github: String,
     image: String
-    // Be careful editing schema! 
 });
 
 const Project = mongoose.model('Project', projectSchema);
 
-// shortcut
 module.exports = Project;
