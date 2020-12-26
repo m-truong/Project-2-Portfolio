@@ -32,6 +32,13 @@ class Show extends React.Component {
                   </Button>
                   <hr />
                   <Button
+                    href={project.heroku}
+                    variant="primary" target="_blank"
+                  >
+                    Go to Heroku
+                  </Button>
+                  <hr /> 
+                  <Button
                     href={`/projects/${project._id}/edit`}
                     variant="primary"
                   >

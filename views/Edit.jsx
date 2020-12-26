@@ -42,6 +42,14 @@ class Edit extends React.Component {
                   />
                 </Form.Group>
                 <Form.Group as={Col} controlId="">
+                  <Form.Label>Project Heroku</Form.Label>
+                  <Form.Control
+                    name="heroku"
+                    type="text"
+                    placeholder="Enter project heroku link"
+                  />
+                </Form.Group>
+                <Form.Group as={Col} controlId="">
                   <Form.Label>Project Image</Form.Label>
                   <Form.Control
                     name="image"
