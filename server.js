@@ -60,6 +60,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 // ===========
 const projectController = require('./controllers/projectController.js')
 app.use('/projects', projectController)
+// const blogController = 
 
 //___________________
 // Non-Rest Routes
