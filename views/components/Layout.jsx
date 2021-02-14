@@ -1,7 +1,6 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-
 const React = require("react");
 
 class Layout extends React.Component {
@@ -14,7 +13,7 @@ class Layout extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>Project Portfolio</title>
+          <title> Michael Truong | Software Engineer </title>
           {/* GoogleFonts */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

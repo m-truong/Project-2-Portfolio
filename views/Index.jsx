@@ -3,16 +3,19 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 
+// import React, { useState, useEffect, useContext } from "react"
+
 const React = require("react");
 const Layout = require("./components/Layout.jsx");
 
 class Index extends React.Component {
+  // const [state, stateHandler] = useState([]); 
   render() {
     return (
       <Layout title="Project Index Page">
         
         <header id="" className="project-index-header">
-          <a href="/projects/new">Add Portfolio Project</a>
+          <a href="/projects/new">Add Portfolio Project</a> 
         </header>
 
         <main>
