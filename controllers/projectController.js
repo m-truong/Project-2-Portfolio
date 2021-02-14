@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
         if (err) {
             res.send(err)
         } else {
-            res.render('Index', {
+            res.render('ProjectPage', {
                 projects: allProjects
             })
         }

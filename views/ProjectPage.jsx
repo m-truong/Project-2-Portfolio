@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 // import React, { useState, useEffect, useContext } from "react"
 
 const React = require("react");
-const Layout = require("./components/Layout.jsx");
+const Layout = require("./Components/Layout.jsx");
 
 class Index extends React.Component {
   // const [state, stateHandler] = useState([]); 
