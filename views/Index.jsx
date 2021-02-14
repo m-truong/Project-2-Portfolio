@@ -12,10 +12,10 @@ class Index extends React.Component {
   // const [state, stateHandler] = useState([]); 
   render() {
     return (
-      <Layout title="Project Index Page">
+      <Layout title="My Apps">
         
         <header id="" className="project-index-header">
-          <a href="/projects/new">Add Portfolio Project</a> 
+          {/* <a href="/projects/new">Add Portfolio Project</a>  */}
         </header>
 
         <main>
@@ -24,20 +24,20 @@ class Index extends React.Component {
               {this.props.projects.map((project, i) => {
                 return (
                   <Card className="card-border" style={{ width: "18rem" }}>
-                    <a href={`/projects/${project._id}`}>
+                    {/* <a href={`/projects/${project._id}`}> */}
                       <Card.Img variant="top" src={project.image} />{" "}
-                    </a>
+                    {/* </a> */}
                     <Card.Body>
                       <Card.Title>{project.title}</Card.Title>
                       <Card.Text className="card-text">
                         {project.description}
                       </Card.Text>
-                      <Button
+                      {/* <Button
                         href={`/projects/${project._id}`}
                         variant="primary"
                       >
                         Show Project Page
-                      </Button>
+                      </Button> */}
                     </Card.Body>
                   </Card>
                 );
