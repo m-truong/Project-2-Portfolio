@@ -68,16 +68,16 @@ app.use('/projects', projectController)
 //___________________
 // Home
 app.get('/', (req, res) => {
+});
 
-});
 // About
-app.get('/about', (req, res) => {
-    res.redirect('/html/about.html');
-});
+// app.get('/about', (req, res) => {
+//     res.redirect('/html/about.html');
+// });
 // Contact
-app.get('/contact', (req, res) => {
-    res.redirect('/html/contact.html');
-});
+// app.get('/contact', (req, res) => {
+//     res.redirect('/html/contact.html');
+// });
 
 //___________________
 //Listener
