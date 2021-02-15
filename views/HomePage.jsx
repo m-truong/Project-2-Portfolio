@@ -7,13 +7,14 @@ const Description = require("./Components/Description.jsx");
 class HomePage extends React.Component {
   render() {
     return (
-      <Layout title="Hi, I'm Mike -">
-        <Container fluid>
+      // Don't use fluid (causes container to span entire width of viewport)
+      <Layout title="Welcome -">
+        <Container >
           <Row>
-            <Col md={3}>
+            <Col md={4}>
               <PhotoCard />
             </Col>
-            <Col md={9}>
+            <Col md={8}>
               <Description />
             </Col>
           </Row>

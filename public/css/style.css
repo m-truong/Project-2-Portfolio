@@ -3,23 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   /* border: 2px solid black; */
-  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
 
 body {
   text-align: center;
   background-color: whitesmoke;
-}
-
-a,
-a:hover,
-a:visited,
-a:active {
-  color: inherit;
-  text-decoration: none;
-}
-a:hover {
-    color: silver;
 }
 
 .card-border {
@@ -30,6 +20,30 @@ a:hover {
 
 .form-style {
   margin-top: 50px;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: silver;
+}
+
+.location {
+  color: gray;
+}
+/* Overwrite FA icons color to gray */
+.fa-quote-left,
+.fa-envelope,
+.fa-github-square,
+.fa-linkedin,
+.fa-instagram-square {
+  color: gray;
 }
 
 .my-photo {
@@ -46,15 +60,30 @@ a:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.photo-card:hover {
+/* .photo-card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} */
+
+/* Intro Quote */
+.intro-quote {
+  font-size: 2rem;
 }
+
+/* Description Card */
 .description-card {
-  border-radius: 0.5rem !important;
   background-color: white;
+  border-radius: 0.5rem !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 0.8rem;
+  text-align: left;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.description-card:hover {
+
+/* .description-card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} */
+
+/* Brand Statement Paragraph */
+.about-paragraph {
+  padding: 1rem;
 }
