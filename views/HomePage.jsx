@@ -20,7 +20,7 @@ class HomePage extends React.Component {
             </Col>
           </Row>
           <Row className="top-buffer">
-            <Col md={8}>
+            <Col className="offset-md-4" md={8}>
               <Skills />
             </Col>
           </Row>

@@ -5,7 +5,7 @@ class Skills extends React.Component {
     return (
       <div className="skills-card">
         <h5> Skills • ~ </h5>
-        <div>
+        <div className="left">
           <h6> Languages: </h6>
           <p>
             <span>
@@ -31,7 +31,7 @@ class Skills extends React.Component {
             </span>
           </p>
         </div>
-        <div>
+        <div className="left">
           <h6> Frontend Libraries: </h6>
           <p>
             <span>
@@ -45,7 +45,7 @@ class Skills extends React.Component {
             </span>
           </p>
         </div>
-        <div>
+        <div className="left">
           <h6> Backend Libraries: </h6>
           <p>
             <span>
@@ -68,7 +68,7 @@ class Skills extends React.Component {
             </span>
           </p>
         </div>
-        <div>
+        <div className="left">
           <h6> Developer Tools: </h6>
           <p>
             <span>
@@ -82,7 +82,7 @@ class Skills extends React.Component {
             </span>
           </p>
         </div>
-        <div>
+        <div className="left">
           <h6> Programming Paradigms: </h6>
           <p>
             <span>

@@ -23,8 +23,9 @@ class Description extends React.Component {
           <a> Download my CV </a>
         </div>
         <h5 className=""> Fun Hobbies! </h5>
-        <p> 🏔 Outdoor nature walks, hiking, fishing </p>
-        <p> 🏃🏻‍♂️ Running exercise </p>
+        <p> 🏔 Outdoor nature walks and hiking </p>
+        <p> 🏃🏻‍♂️ Cardio and running </p>
+        <p> 🎾 Playing tennis </p>
         <p> 🧘🏻‍♂️ Guided meditation</p>
         <p> 🎮 Video games (currently replaying Fez)</p>
       </div>

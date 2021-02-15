@@ -38,6 +38,12 @@ a:hover {
 .location {
   color: gray;
 }
+div.left {
+  padding: 0.1rem 1rem;
+}
+.left {
+  text-align: left;
+}
 
 /* Bootstrap Row Top-Buffer*/
 .top-buffer {
