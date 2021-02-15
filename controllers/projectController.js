@@ -77,16 +77,16 @@ router.get('/', (req, res) => {
 // });
 
 // Show 
-// router.get('/:id', (req, res) => {
-//     Project.findById(req.params.id, (err, foundProject) => {
-//         if (err) {
-//             res.send(err)
-//         } else {
-//             res.render('Show', {
-//                 project: foundProject
-//             })
-//         }
-//     });
-// });
+router.get('/:id', (req, res) => {
+    Project.findById(req.params.id, (err, foundProject) => {
+        if (err) {
+            res.send(err)
+        } else {
+            res.render('Show', {
+                project: foundProject
+            })
+        }
+    });
+});
 
 module.exports = router;

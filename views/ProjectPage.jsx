@@ -3,13 +3,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 
-// import React, { useState, useEffect, useContext } from "react"
-
 const React = require("react");
 const Layout = require("./Components/Layout.jsx");
-
-class Index extends React.Component {
-  // const [state, stateHandler] = useState([]); 
+ 
+class ProjectPage extends React.Component {
   render() {
     return (
       <Layout title="My Apps">
@@ -32,12 +29,12 @@ class Index extends React.Component {
                       <Card.Text className="card-text">
                         {project.description}
                       </Card.Text>
-                      {/* <Button
+                      <Button
                         href={`/projects/${project._id}`}
                         variant="primary"
                       >
                         Show Project Page
-                      </Button> */}
+                      </Button>
                     </Card.Body>
                   </Card>
                 );
@@ -50,4 +47,4 @@ class Index extends React.Component {
   }
 }
 
-module.exports = Index;
+module.exports = ProjectPage;
