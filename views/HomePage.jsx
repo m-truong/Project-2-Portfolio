@@ -7,14 +7,14 @@ const Description = require("./Components/Description.jsx");
 class HomePage extends React.Component {
   render() {
     return (
-      <Layout title="My Apps">
+      <Layout title="Hi, I'm Mike -">
         <Container fluid>
           <Row>
             <Col md={3}>
               <PhotoCard />
             </Col>
             <Col md={9}>
-              <Description/>
+              <Description />
             </Col>
           </Row>
         </Container>

@@ -20,7 +20,13 @@ class Layout extends React.Component {
             href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
             rel="stylesheet"
           ></link>
-
+          {/* FontAwesome */}
+          <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+            crossorigin="anonymous"
+          ></link>
           {/* Bootstrap */}
           <link
             rel="stylesheet"
@@ -32,7 +38,12 @@ class Layout extends React.Component {
           <link rel="stylesheet" href="/css/style.css" />
         </head>
         <body>
-          <Navbar bg="light" expand="lg">
+          <Navbar
+            bg="light"
+            expand="lg"
+            sticky="top"
+            className="shadow p-3 pb-1 mb-3"
+          >
             <Navbar.Brand href="/">#Home</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
