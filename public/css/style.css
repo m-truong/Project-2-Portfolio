@@ -34,9 +34,16 @@ a:hover {
   color: silver;
 }
 
+/* Location Text */
 .location {
   color: gray;
 }
+
+/* Bootstrap Row Top-Buffer*/
+.top-buffer {
+  margin-top: 2rem;
+}
+
 /* Overwrite FA icons color to gray */
 .fa-quote-left,
 .fa-envelope,
@@ -54,9 +61,11 @@ a:hover {
   display: block;
 }
 
-.photo-card {
-  border-radius: 0.5rem !important;
+.photo-card,
+.description-card,
+.skills-card {
   background-color: white;
+  border-radius: 0.5rem !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -69,14 +78,10 @@ a:hover {
   font-size: 2rem;
 }
 
-/* Description Card */
+/* Description Card Padding*/
 .description-card {
-  background-color: white;
-  border-radius: 0.5rem !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 0.8rem;
   text-align: left;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* .description-card:hover {

@@ -19,11 +19,14 @@ class Description extends React.Component {
           background in the biological sciences also drives my constant
           curiosity towards funding precise solutions to any problem.
         </p>
+        <div>
+          <a> Download my CV </a>
+        </div>
         <h5 className=""> Fun Hobbies! </h5>
-        <p> 🌲 🏔 Hiking outdoors!</p>
+        <p> 🏔 Outdoor nature walks, hiking, fishing </p>
         <p> 🏃🏻‍♂️ Running exercise </p>
         <p> 🧘🏻‍♂️ Guided meditation</p>
-        <p> 🎮 Video games (currently playing replaying Fez)</p>
+        <p> 🎮 Video games (currently replaying Fez)</p>
       </div>
     );
   }
