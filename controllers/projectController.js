@@ -83,7 +83,7 @@ router.get('/:id', (req, res) => {
             res.send(err)
         } else {
             res.render('Show', {
-                project: foundProject
+                item: foundProject
             })
         }
     });

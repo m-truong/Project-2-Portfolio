@@ -2,42 +2,51 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form"
+import Form from "react-bootstrap/Form";
 
 const React = require("react");
 const Layout = require("./Components/Layout.jsx");
 
 class Show extends React.Component {
   render() {
-    const project = this.props.project;
+    const item = this.props.item;
     return (
-      <Layout title={project.title}>
+      <Layout title={item.title}>
         <main>
           <Container>
             <Row className="justify-content-md-center">
               <Card className="card-border" style={{ width: "18rem" }}>
-                <Card.Img variant="top" src={project.image} />
+                <Card.Img variant="top" src={item.image} />
                 <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Title>{item.title}</Card.Title>
+                  <Card.Title>{item.date}</Card.Title>
                   <hr />
                   <Card.Text className="card-text">
-                    {project.description}
+                    {item.description}
                   </Card.Text>
-                  <hr />
-                  <Button
-                    href={project.github}
-                    variant="primary" target="_blank"
-                  >
-                    GitHub
-                  </Button>
-                  <hr />
-                  <Button
-                    href={project.heroku}
-                    variant="primary" target="_blank"
-                  >
-                    Live App
-                  </Button>
-                  <hr /> 
+                  {item.github ? (
+                    <>
+                      <hr />
+                      <Button
+                        href={item.github}
+                        variant="primary"
+                        target="_blank"
+                      >
+                        GitHub
+                      </Button>
+                      <hr />
+                      <Button
+                        href={item.heroku}
+                        variant="primary"
+                        target="_blank"
+                      >
+                        Live App
+                      </Button>
+                      <hr />
+                    </>
+                  ) : (
+                    <hr />
+                  )}
                   {/* <Button
                     href={`/projects/${project._id}/edit`}
                     variant="primary"
