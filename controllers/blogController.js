@@ -1,10 +1,10 @@
-// const express = require('express')
-// const router = express.Router()
+const express = require('express')
+const router = express.Router()
 
 // // ============
 // // DATABASE
 // // ============
-// const Project = require('../models/project.js')
+const Blog = require('../models/blog.js')
 
 // // ======================
 // // RESTful ROUTES "INDUCES"
