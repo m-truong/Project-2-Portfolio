@@ -23,12 +23,12 @@ class Description extends React.Component {
           <a> Download my CV </a>
         </div>
         <h5 className=""> Fun Hobbies! </h5>
-        <p> 🛫 Travel </p>
-        <p> 🏔 Outdoor nature walks and hiking </p>
-        <p> 🏃🏻‍♂️ Cardio and running </p>
-        <p> 🎾 Playing tennis </p>
-        <p> 🧘🏻‍♂️ Guided meditation</p>
-        <p> 🎮 Video games (currently replaying Fez)</p>
+        {/* <p className="alt-text-color"> 🛫 Travel </p> */}
+        <p className="alt-text-color"> 🏔 Outdoor nature walks and hiking </p>
+        <p className="alt-text-color"> 🏃🏻‍♂️ Cardio and running </p>
+        <p className="alt-text-color"> 🎾 Playing tennis </p>
+        <p className="alt-text-color"> 🧘🏻‍♂️ Guided meditation</p>
+        <p className="alt-text-color"> 🎮 Video games (currently replaying Fez)</p>
       </div>
     );
   }

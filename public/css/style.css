@@ -59,6 +59,11 @@ div.left {
   color: gray;
 }
 
+/* Alt-Text Color */
+.alt-text-color, span {
+  color: #6B6A6B; 
+}
+
 .my-photo {
   max-width: 100%;
   max-height: 100%;
@@ -97,4 +102,16 @@ div.left {
 /* Brand Statement Paragraph */
 .about-paragraph {
   padding: 1rem;
+}
+
+/* Box Container */
+.box {
+
+}
+
+
+/* Image Wdith-Height */
+.image {
+  max-width: 100%;
+  max-height: 100%;
 }
