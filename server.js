@@ -40,8 +40,7 @@ db.on('open', () => {
 //___________________
 //Middleware
 //___________________
-
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.use(express.urlencoded({
     extended: true
 })); 
@@ -60,24 +59,34 @@ app.engine('jsx', require('express-react-views').createEngine());
 // ===========
 const projectController = require('./controllers/projectController.js')
 app.use('/projects', projectController)
-// const blogController = require('./controllers/blogController.js')
-// app.use('/blogposts', blogController)
+const blogController = require('./controllers/blogController.js')
+app.use('/blogs', blogController)
 
 //___________________
 // Non-Rest Routes
 //___________________
-// Home
+// Root redirects to HomePage 
 app.get('/', (req, res) => {
+    res.redirect('/home');
+});
 
+app.get('/home', (req, res) => {
+    res.render('HomePage.jsx');
 });
+
+// Express checks routes in the order they are declared; and since index.html is a default filename which is used by static middleware, it shows index.html content.
+// To fix this, I placed app.use(express.static) after app.get('/')
+// So by declaring app.use(express.static) after app.get('/'); it is able to NOT render the default .html file in 'public' and redirects to the "HomePage" React-Views component   
+app.use(express.static('public'));
+
 // About
-app.get('/about', (req, res) => {
-    res.redirect('/html/about.html');
-});
+// app.get('/about', (req, res) => {
+//     res.redirect('/html/about.html');
+// });
 // Contact
-app.get('/contact', (req, res) => {
-    res.redirect('/html/contact.html');
-});
+// app.get('/contact', (req, res) => {
+//     res.redirect('/html/contact.html');
+// });
 
 //___________________
 //Listener

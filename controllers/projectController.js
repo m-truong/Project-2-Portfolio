@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
         if (err) {
             res.send(err)
         } else {
-            res.render('Index', {
+            res.render('ProjectPage', {
                 projects: allProjects
             })
         }
@@ -24,57 +24,57 @@ router.get('/', (req, res) => {
 });
 
 // New
-router.get('/new', (req, res) => {
-    res.render('New');
-});
+// router.get('/new', (req, res) => {
+//     res.render('New');
+// });
 
 // Delete 
-router.delete('/:id', (req, res) => {
-    Project.findByIdAndRemove(req.params.id, (err, foundProject) => {
-        if (err) {
-            res.send(err)
-        } else {
-            res.redirect('/projects')
-        }
-    });
-});
+// router.delete('/:id', (req, res) => {
+//     Project.findByIdAndRemove(req.params.id, (err, foundProject) => {
+//         if (err) {
+//             res.send(err)
+//         } else {
+//             res.redirect('/projects')
+//         }
+//     });
+// });
 
 // Update 
-router.put('/:id', (req, res) => {
-    Project.findByIdAndUpdate(req.params.id, req.body, {
-        new: true
-    }, (err, updatedProject) => {
-        if (err) {
-            res.send(err)
-        } else {
-            res.redirect(`/projects/${req.params.id}`)
-        }
-    });
-});
+// router.put('/:id', (req, res) => {
+//     Project.findByIdAndUpdate(req.params.id, req.body, {
+//         new: true
+//     }, (err, updatedProject) => {
+//         if (err) {
+//             res.send(err)
+//         } else {
+//             res.redirect(`/projects/${req.params.id}`)
+//         }
+//     });
+// });
 
 // Create 
-router.post('/', (req, res) => {
-    Project.create(req.body, (err, createdProject) => {
-        if (err) {
-            res.send(err);
-        } else {
-            res.redirect('/projects');
-        }
-    });
-});
+// router.post('/', (req, res) => {
+//     Project.create(req.body, (err, createdProject) => {
+//         if (err) {
+//             res.send(err);
+//         } else {
+//             res.redirect('/projects');
+//         }
+//     });
+// });
 
 // Edit 
-router.get('/:id/edit', (req, res) => {
-    Project.findById(req.params.id, (err, foundProject) => {
-        if (err) {
-            res.send(err)
-        } else {
-            res.render('Edit', {
-                project: foundProject
-            })
-        }
-    });
-});
+// router.get('/:id/edit', (req, res) => {
+//     Project.findById(req.params.id, (err, foundProject) => {
+//         if (err) {
+//             res.send(err)
+//         } else {
+//             res.render('Edit', {
+//                 project: foundProject
+//             })
+//         }
+//     });
+// });
 
 // Show 
 router.get('/:id', (req, res) => {
@@ -83,7 +83,7 @@ router.get('/:id', (req, res) => {
             res.send(err)
         } else {
             res.render('Show', {
-                project: foundProject
+                item: foundProject
             })
         }
     });
