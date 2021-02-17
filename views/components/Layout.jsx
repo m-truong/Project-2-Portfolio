@@ -17,10 +17,16 @@ class Layout extends React.Component {
           {/* GoogleFonts */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
             rel="stylesheet"
           ></link>
-
+          {/* FontAwesome */}
+          <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+            crossorigin="anonymous"
+          ></link>
           {/* Bootstrap */}
           <link
             rel="stylesheet"
@@ -28,18 +34,43 @@ class Layout extends React.Component {
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossOrigin="anonymous"
           ></link>
+          {/* Favicon */}
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest"></link>
           {/* CSS Stylesheet */}
           <link rel="stylesheet" href="/css/style.css" />
         </head>
         <body>
-          <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="/">Portfolio Home</Navbar.Brand>
+          <Navbar
+            bg="light"
+            expand="lg"
+            sticky="top"
+            className="shadow p-3 pb-1 mb-3"
+          >
+            <Navbar.Brand href="/">Mike</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/contact">Contact</Nav.Link>
-                <Nav.Link href="/projects">Projects</Nav.Link>
+            <Navbar.Collapse id="basic-nav-dropdown">
+              <Nav className="ml-auto">
+                {/* <Nav.Link href="/about">About</Nav.Link> */}
+                {/* <Nav.Link href="/contact">Contact</Nav.Link> */}
+                <Nav.Link className="" href="/projects">#Projects</Nav.Link>
+                <Nav.Link className="" href="/blogs">#CodeJournal</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

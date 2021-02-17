@@ -1,22 +1,164 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 2px solid black; */
-    font-family: 'Mukta', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  
 }
 
 body {
-    text-align: center;
-    background-color: whitesmoke;
+  text-align: center;
+  background-color: whitesmoke;
+  /* background-image: -webkit-linear-gradient(65deg, whitesmoke 50%, gainsboro 50%);
+  background-repeat: no-repeat; */
 }
 
 .card-border {
-    margin-top: 50px;
-    box-shadow: 0 4px 8px rgb(26, 31, 39);
-    border-radius: 15px;
+  margin-top: 50px;
+  box-shadow: 0 2px 6px rgb(37, 42, 49);
+  border-radius: 15px;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+.card-border:hover {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} 
 
 .form-style {
-    margin-top: 50px;
+  margin-top: 50px;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: silver;
+}
+
+/* Location Text */
+.location {
+  color: gray;
+}
+div.left {
+  padding: 0.1rem 1rem;
+}
+.left {
+  text-align: left;
+}
+
+/* Bootstrap Row Top-Buffer*/
+.top-buffer {
+  margin-top: 2rem;
+}
+
+/* Overwrite FA icons color to gray */
+.fa-quote-left,
+.fa-envelope,
+.fa-github-square,
+.fa-linkedin,
+.fa-instagram-square {
+  color: gray;
+}
+
+/* Alt-Text Color */
+.alt-text-color, span {
+  color: #6B6A6B; 
+}
+
+/* my Photo and Project/Blog images */
+/* Image Width-Height */
+
+.my-photo, .image {
+  max-width: 100%;
+  /* max-height: 100%; */
+  height: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: block;
+}
+
+.image {
+  /* width: 10000px; */
+  /* height: 30rem; */
+}
+
+.photo-card,
+.description-card,
+.skills-card {
+  background-color: white;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+/* .photo-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} */
+
+/* Intro Quote */
+.intro-quote {
+  font-size: 2rem;
+}
+
+/* Description Card Padding*/
+.description-card {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+/* .description-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} */
+
+/* Brand Statement Paragraph */
+.about-paragraph {
+  padding: 1rem;
+}
+
+/* Box Container */
+.box-style {
+  /* width: 800px; */
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.button-style {
+  background-color: transparent !important;;
+  color: gray !important;
+  margin: 1rem;
+}
+.button-style:hover, .button-style:active {
+  background-color:whitesmoke !important;
+  color: #404040 !important;
+}
+/* Vertically Aligned */
+
+.vertical-buffer {
+  margin-top: 10rem;
+}
+
+.add-padding {
+  padding: 1rem;
+}
+
+.title-text-size {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.title-text-size:hover {
+  color: gainsboro;
+}
+
+.smaller-text {
+  font-size: 2rem;
 }

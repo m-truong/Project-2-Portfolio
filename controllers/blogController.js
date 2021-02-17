@@ -1,27 +1,27 @@
-// const express = require('express')
-// const router = express.Router()
+const express = require('express')
+const router = express.Router()
 
 // // ============
 // // DATABASE
 // // ============
-// const Project = require('../models/project.js')
+const Blog = require('../models/blog.js')
 
 // // ======================
 // // RESTful ROUTES "INDUCES"
 // // ======================
 
-// // Index
-// router.get('/', (req, res) => {
-//     Project.find({}, (err, allProjects) => {
-//         if (err) {
-//             res.send(err)
-//         } else {
-//             res.render('Index', {
-//                 projects: allProjects
-//             })
-//         }
-//     });
-// });
+// Index
+router.get('/', (req, res) => {
+    Blog.find({}, (err, allBlogs) => {
+        if (err) {
+            res.send(err)
+        } else {
+            res.render('BlogPage', {
+                blogs: allBlogs
+            })
+        }
+    });
+});
 
 // // New
 // router.get('/new', (req, res) => {
@@ -30,63 +30,64 @@
 
 // // Delete 
 // router.delete('/:id', (req, res) => {
-//     Project.findByIdAndRemove(req.params.id, (err, foundProject) => {
+//     Blog.findByIdAndRemove(req.params.id, (err, foundBlog) => {
 //         if (err) {
 //             res.send(err)
 //         } else {
-//             res.redirect('/projects')
+//             res.redirect('/blogs')
 //         }
 //     });
 // });
 
 // // Update 
 // router.put('/:id', (req, res) => {
-//     Project.findByIdAndUpdate(req.params.id, req.body, {
+//     Blog.findByIdAndUpdate(req.params.id, req.body, {
 //         new: true
-//     }, (err, updatedProject) => {
+//     }, (err, updatedBlog) => {
 //         if (err) {
 //             res.send(err)
 //         } else {
-//             res.redirect(`/projects/${req.params.id}`)
+//             res.redirect(`/blogs/${req.params.id}`)
 //         }
 //     });
 // });
 
-// // Create 
-// router.post('/', (req, res) => {
-//     Project.create(req.body, (err, createdProject) => {
-//         if (err) {
-//             res.send(err);
-//         } else {
-//             res.redirect('/projects');
-//         }
-//     });
-// });
+// Create 
+router.post('/', (req, res) => {
+    Blog.create(req.body, (err, createdBlog) => {
+        if (err) {
+            res.send(err);
+        } else {
+            res.send('POST request to blogpage successful')
+            // res.redirect('/blogs');
+        }
+    });
+});
 
 // // Edit 
 // router.get('/:id/edit', (req, res) => {
-//     Project.findById(req.params.id, (err, foundProject) => {
+//     Blog.findById(req.params.id, (err, foundBlog) => {
 //         if (err) {
 //             res.send(err)
 //         } else {
 //             res.render('Edit', {
-//                 project: foundProject
+//                 blog: foundBlog
 //             })
 //         }
 //     });
 // });
 
-// // Show 
-// router.get('/:id', (req, res) => {
-//     Project.findById(req.params.id, (err, foundProject) => {
-//         if (err) {
-//             res.send(err)
-//         } else {
-//             res.render('Show', {
-//                 project: foundProject
-//             })
-//         }
-//     });
-// });
+// Show 
+router.get('/:id', (req, res) => {
+    Blog.findById(req.params.id, (err, foundBlog) => {
+        if (err) {
+            res.send(err)
+        } else {
+            res.render('Show', {
+                item: foundBlog
+            })
+        }
+    });
+});
 
-// module.exports = router;
+module.exports = router;
