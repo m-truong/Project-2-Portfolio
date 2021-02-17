@@ -7,9 +7,9 @@ class Box extends React.Component {
     console.log(properties);
     return (
       <div className="box-style">
-        <h1>{properties.title}</h1>
+        <h1 className="smaller-text">{properties.title}</h1>
         {properties.date ? <h3>{properties.date}</h3> : ""}
-        <p className="left">{properties.description}</p>
+        <p className="left add-padding">{properties.description}</p>
         {properties.github ? (
           <>
             <hr />
@@ -21,7 +21,6 @@ class Box extends React.Component {
             >
               <i class="fas fa-code"></i> Code
             </Button>
-            <hr />
             <Button
               className="button-style"
               href={properties.heroku}

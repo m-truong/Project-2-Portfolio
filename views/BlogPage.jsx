@@ -9,7 +9,7 @@ const Layout = require("./Components/Layout.jsx");
 class BlogPage extends React.Component {
   render() {
     return (
-      <Layout title="">
+      <Layout title="Code Journal">
         <header id="" className="blog-index-header">
           {/* <a href="/blogs/new">Add Portfolio Blog</a>  */}
         </header>
@@ -19,7 +19,7 @@ class BlogPage extends React.Component {
             <Row className="justify-content-between align-content-between">
               {this.props.blogs.map((blog, i) => {
                 return (
-                  <Card className="card-border" style={{ width: "18rem" }}>
+                  <Card className="card-border" style={{ width: "30rem" }}>
                     {/* <a href={`/blogs/${blog._id}`}> */}
                     <Card.Img variant="top" src={blog.image} /> {/* </a> */}
                     <Card.Body>

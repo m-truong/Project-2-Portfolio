@@ -5,11 +5,14 @@
   /* border: 2px solid black; */
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
+  
 }
 
 body {
   text-align: center;
   background-color: whitesmoke;
+  /* background-image: -webkit-linear-gradient(65deg, whitesmoke 50%, gainsboro 50%);
+  background-repeat: no-repeat; */
 }
 
 .card-border {
@@ -73,15 +76,18 @@ div.left {
 
 .my-photo, .image {
   max-width: 100%;
-  max-height: 100%;
+  /* max-height: 100%; */
+  height: auto;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   display: block;
 }
 
 .image {
-
+  /* width: 10000px; */
+  /* height: 30rem; */
 }
+
 .photo-card,
 .description-card,
 .skills-card {
@@ -116,6 +122,7 @@ div.left {
 
 /* Box Container */
 .box-style {
+  /* width: 800px; */
   padding: 0.5rem;
   background-color: white;
   border-radius: 0.5rem !important;
@@ -123,22 +130,35 @@ div.left {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Vertically Aligned */
-
-/* .vertically-aligned {
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-} */
-
 .button-style {
-  background-color: transparent;
-  color: gray;
+  background-color: transparent !important;;
+  color: gray !important;
+  margin: 1rem;
 }
 .button-style:hover, .button-style:active {
   background-color:whitesmoke !important;
   color: #404040 !important;
+}
+/* Vertically Aligned */
+
+.vertical-buffer {
+  margin-top: 10rem;
+}
+
+.add-padding {
+  padding: 1rem;
+}
+
+.title-text-size {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.title-text-size:hover {
+  color: gainsboro;
+}
+
+.smaller-text {
+  font-size: 2rem;
 }

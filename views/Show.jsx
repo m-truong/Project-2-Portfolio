@@ -14,14 +14,14 @@ class Show extends React.Component {
     const item = this.props.item;
     return (
       <Layout title={""}>
-        <Container className="vertically-aligned">
+        <Container className="vertical-buffer">
           <Row className="top-buffer justify-content-center">
-            <Col md={5}>
+            <Col md={7}>
               <div className="box-style">
                 <img className="image" src={item.image} alt="img" />
               </div>
             </Col>
-            <Col md={7}>
+            <Col md={5}>
               <Box item={item} />
             </Col>
           </Row>

@@ -9,7 +9,7 @@ const Layout = require("./Components/Layout.jsx");
 class ProjectPage extends React.Component {
   render() {
     return (
-      <Layout title="My Apps">
+      <Layout title="My Projects">
         <header id="" className="project-index-header">
           {/* <a href="/projects/new">Add Portfolio Project</a>  */}
         </header>
@@ -19,11 +19,11 @@ class ProjectPage extends React.Component {
             <Row className="justify-content-between align-content-between">
               {this.props.projects.map((project, i) => {
                 return (
-                  <Card className="card-border" style={{ width: "18rem" }}>
+                  <Card className="card-border" style={{ width: "30rem" }}>
                     {/* <a href={`/projects/${project._id}`}> */}
                     <Card.Img variant="top" src={project.image} /> {/* </a> */}
                     <Card.Body>
-                      <Card.Title>{project.title}</Card.Title>
+                      <Card.Title className="title-text-size">{project.title}</Card.Title>
                       {/* <Card.Text className="card-text">
                         {project.description}
                       </Card.Text> */}
