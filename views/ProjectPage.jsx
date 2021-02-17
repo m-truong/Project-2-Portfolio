@@ -5,12 +5,11 @@ import Card from "react-bootstrap/Card";
 
 const React = require("react");
 const Layout = require("./Components/Layout.jsx");
- 
+
 class ProjectPage extends React.Component {
   render() {
     return (
       <Layout title="My Apps">
-        
         <header id="" className="project-index-header">
           {/* <a href="/projects/new">Add Portfolio Project</a>  */}
         </header>
@@ -22,18 +21,18 @@ class ProjectPage extends React.Component {
                 return (
                   <Card className="card-border" style={{ width: "18rem" }}>
                     {/* <a href={`/projects/${project._id}`}> */}
-                      <Card.Img variant="top" src={project.image} />{" "}
-                    {/* </a> */}
+                    <Card.Img variant="top" src={project.image} /> {/* </a> */}
                     <Card.Body>
                       <Card.Title>{project.title}</Card.Title>
-                      <Card.Text className="card-text">
+                      {/* <Card.Text className="card-text">
                         {project.description}
-                      </Card.Text>
+                      </Card.Text> */}
                       <Button
+                        className="button-style"
                         href={`/projects/${project._id}`}
                         variant="primary"
                       >
-                        Show Project Page
+                       <i class="fas fa-info-circle"></i> Project Info
                       </Button>
                     </Card.Body>
                   </Card>

@@ -72,6 +72,9 @@ class Skills extends React.Component {
           <h6> Developer Tools: </h6>
           <p>
             <span>
+            <i class="fas fa-terminal"></i> Command Line |{" "}
+            </span>
+            <span>
               <i class="fab fa-github"></i> GitHub |{" "}
             </span>
             <span>

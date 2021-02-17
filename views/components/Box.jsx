@@ -1,3 +1,4 @@
+import Button from "react-bootstrap/Button";
 const React = require("react");
 
 class Box extends React.Component {
@@ -5,10 +6,35 @@ class Box extends React.Component {
     const properties = this.props.item;
     console.log(properties);
     return (
-      <div className="">
+      <div className="box-style">
         <h1>{properties.title}</h1>
         {properties.date ? <h3>{properties.date}</h3> : ""}
-        <p>{properties.description}</p>
+        <p className="left">{properties.description}</p>
+        {properties.github ? (
+          <>
+            <hr />
+            <Button
+              className="button-style"
+              href={properties.github}
+              variant="primary"
+              target="_blank"
+            >
+              <i class="fas fa-code"></i> Code
+            </Button>
+            <hr />
+            <Button
+              className="button-style"
+              href={properties.heroku}
+              variant="primary"
+              target="_blank"
+            >
+              <i class="fas fa-play"></i> Live App
+            </Button>
+            <hr />
+          </>
+        ) : (
+          <hr />
+        )}
       </div>
     );
   }

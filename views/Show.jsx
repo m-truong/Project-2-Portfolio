@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
@@ -14,16 +14,14 @@ class Show extends React.Component {
     const item = this.props.item;
     return (
       <Layout title={""}>
-        <Container>
-          <Row>
-            <Col md={6}>
-              <div className="box">
-                <h1>Image Here</h1>
+        <Container className="vertically-aligned">
+          <Row className="top-buffer justify-content-center">
+            <Col md={5}>
+              <div className="box-style">
                 <img className="image" src={item.image} alt="img" />
               </div>
             </Col>
-            <Col md={6}>
-              <h1>Project/Blog Here</h1>
+            <Col md={7}>
               <Box item={item} />
             </Col>
           </Row>

@@ -14,9 +14,13 @@ body {
 
 .card-border {
   margin-top: 50px;
-  box-shadow: 0 4px 8px rgb(37, 42, 49);
+  box-shadow: 0 2px 6px rgb(37, 42, 49);
   border-radius: 15px;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+.card-border:hover {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} 
 
 .form-style {
   margin-top: 50px;
@@ -64,7 +68,10 @@ div.left {
   color: #6B6A6B; 
 }
 
-.my-photo {
+/* my Photo and Project/Blog images */
+/* Image Width-Height */
+
+.my-photo, .image {
   max-width: 100%;
   max-height: 100%;
   border-top-left-radius: 0.5rem;
@@ -72,6 +79,9 @@ div.left {
   display: block;
 }
 
+.image {
+
+}
 .photo-card,
 .description-card,
 .skills-card {
@@ -105,13 +115,30 @@ div.left {
 }
 
 /* Box Container */
-.box {
-
+.box-style {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* Vertically Aligned */
 
-/* Image Wdith-Height */
-.image {
-  max-width: 100%;
-  max-height: 100%;
+/* .vertically-aligned {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+} */
+
+.button-style {
+  background-color: transparent;
+  color: gray;
+}
+.button-style:hover, .button-style:active {
+  background-color:whitesmoke !important;
+  color: #404040 !important;
 }

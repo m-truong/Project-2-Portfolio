@@ -25,11 +25,11 @@ class BlogPage extends React.Component {
                     <Card.Body>
                       <Card.Title>{blog.title}</Card.Title>
                       <Card.Title>{blog.date}</Card.Title>
-                      <Card.Text className="card-text">
+                      {/* <Card.Text className="card-text">
                         {blog.description}
-                      </Card.Text>
-                      <Button href={`/blogs/${blog._id}`} variant="primary">
-                        Show blog Page
+                      </Card.Text> */}
+                      <Button className="button-style" href={`/blogs/${blog._id}`} variant="primary">
+                      <i class="fas fa-align-left"></i> Show blog Page
                       </Button>
                     </Card.Body>
                   </Card>
