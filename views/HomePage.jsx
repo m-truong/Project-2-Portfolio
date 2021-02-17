@@ -1,9 +1,9 @@
 import { Navbar, Nav, Container, Col, Row, Button } from "react-bootstrap";
-import Skills from "./Components/Skills.jsx";
 const React = require("react");
 const Layout = require("./Components/Layout.jsx");
 const PhotoCard = require("./Components/PhotoCard.jsx");
 const Description = require("./Components/Description.jsx");
+const Skills = require("./Components/Skills.jsx");
 
 class HomePage extends React.Component {
   render() {
