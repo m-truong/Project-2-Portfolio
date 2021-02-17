@@ -6,8 +6,8 @@ import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 
 const React = require("react");
-const Layout = require("./Components/Layout.jsx");
-const Box = require("./Components/Box.jsx");
+const Layout = require("./components/Layout");
+const Box = require("./components/Box");
 
 class Show extends React.Component {
   render() {

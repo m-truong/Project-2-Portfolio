@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 
 const React = require("react");
-const Layout = require("./Components/Layout.jsx");
+const Layout = require("./components/Layout");
 
 class ProjectPage extends React.Component {
   render() {
