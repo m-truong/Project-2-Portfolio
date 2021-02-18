@@ -9,7 +9,7 @@ class HomePage extends React.Component {
   render() {
     return (
       // Don't use fluid (causes container to span entire width of viewport)
-      <Layout title="Welcome -">
+      <Layout title="Welcome ~">
         <Container>
           <Row className="top-buffer">
             <Col md={4}>

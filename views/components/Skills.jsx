@@ -3,8 +3,8 @@ const React = require("react");
 class Skills extends React.Component {
   render() {
     return (
-      <div className="skills-card">
-        <h5> Skills • ~ </h5>
+      <div className="skills-card padding">
+        <h5> Proficiences ~ </h5>
         <div className="left">
           <h6> Languages: </h6>
           <p>
