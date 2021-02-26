@@ -166,3 +166,10 @@ div.left {
 .smaller-text {
   font-size: 2rem;
 }
+.resume-link {
+  font-size: 1.1rem;
+}
+
+.resume-link:hover {
+  color: rgb(206, 185, 65);
+}
