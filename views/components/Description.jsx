@@ -17,7 +17,7 @@ class Description extends React.Component {
           My education and volunteering experience drives my thoughtful approach towards building apps centered around the human experience. As a science major with a keen eye for detail, I adapt quickly to find concise engineering solutions and makes me a great developer for any role.
         </p>
         <div className="padding">
-          <a className="" href="../../public/documents/MichaelTruongResume.pdf" download> Download my resume ~ </a>
+          <a className="" href="../../public/documents/MichaelTruongResume" download> Download my resume ~ </a>
         </div>
         <div className="padding">
         <h5 className=""> Fun Hobbies! </h5>
