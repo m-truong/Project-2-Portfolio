@@ -34,9 +34,17 @@ class ProjectPage extends React.Component {
                       </Card.Text> */}
 
                       {/* Attempt .map and .split to display FA icons */}
-                      {project.languages.split("/").map((language, i) => {
-                        return <span className="languages">{language}</span>;
-                      })}
+                      <div className="languages-div">
+                        {project.languages.split("/").map((language, i) => {
+                          return language[0] === "f" ? (
+                            <span>
+                              <i class={language}/>{" "}
+                            </span>
+                          ) : (
+                            <span className="languages">{language} |</span>
+                          );
+                        })}
+                      </div>
 
                       <br />
                       <Button

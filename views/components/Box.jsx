@@ -9,7 +9,26 @@ class Box extends React.Component {
       <div className="box-style">
         <h1 className="smaller-text">{properties.title}</h1>
         {properties.date ? <h3>{properties.date}</h3> : ""}
-        <p className="left add-padding">{properties.description}</p>
+
+        <p>Built with: {} </p>
+
+        {/* <div className="languages-div">
+          {project.languages.split("/").map((language, i) => {
+            return language[0] === "f" ? (
+              <span>
+                <i class={language} />{" "}
+              </span>
+            ) : (
+              <span className="languages">{language} |</span>
+            );
+          })}
+        </div> */}
+
+        {/* .split.map over paragraph description and <p> */}
+        {properties.description.split("/").map((descrip, i) => {
+          return <p className="left add-padding">{descrip}</p>;
+        })}
+        {/* <p className="left add-padding">{properties.description}</p> */}
         {properties.github ? (
           <>
             <hr />
