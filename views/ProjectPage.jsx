@@ -1,3 +1,6 @@
+// 1. TODO: change database to have strings of FA icons
+// 2. TODO: change font styling of headers
+
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -27,7 +30,8 @@ class ProjectPage extends React.Component {
                       {/* <Card.Text className="card-text">
                         {project.description}
                       </Card.Text> */}
-                      <Button
+                      {/* Attempt .map and .split to display FA icons */}
+                      <Button 
                         className="button-style"
                         href={`/projects/${project._id}`}
                         variant="primary"

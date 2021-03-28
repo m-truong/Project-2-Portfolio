@@ -1,3 +1,5 @@
+// 1. Split the paragraph so it's easier to read
+// 2. Add languagues above the paragraph 
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -10,7 +12,7 @@ const Layout = require("./components/Layout");
 const Box = require("./components/Box");
 
 class Show extends React.Component {
-  render() {
+  render() { 
     const item = this.props.item;
     return (
       <Layout title={""}>

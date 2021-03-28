@@ -5,7 +5,9 @@ const projectSchema = new mongoose.Schema({
     description: String,
     github: String,
     heroku: String,
-    image: String
+    image: String,
+    icons: String,
+    // Add new required document field? for FontAwesome Icons
 });
 
 const Project = mongoose.model('Project', projectSchema);
