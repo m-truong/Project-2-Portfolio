@@ -26,17 +26,25 @@ class ProjectPage extends React.Component {
                     {/* <a href={`/projects/${project._id}`}> */}
                     <Card.Img variant="top" src={project.image} /> {/* </a> */}
                     <Card.Body>
-                      <Card.Title className="title-text-size">{project.title}</Card.Title>
+                      <Card.Title className="title-text-size">
+                        {project.title}
+                      </Card.Title>
                       {/* <Card.Text className="card-text">
                         {project.description}
                       </Card.Text> */}
+
                       {/* Attempt .map and .split to display FA icons */}
-                      <Button 
+                      {project.languages.split("/").map((language, i) => {
+                        return <span className="languages">{language}</span>;
+                      })}
+
+                      <br />
+                      <Button
                         className="button-style"
                         href={`/projects/${project._id}`}
                         variant="primary"
                       >
-                       <i class="fas fa-info-circle"></i> Project Info
+                        <i class="fas fa-info-circle" /> Project Info
                       </Button>
                     </Card.Body>
                   </Card>

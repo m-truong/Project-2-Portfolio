@@ -173,3 +173,7 @@ div.left {
 .resume-link:hover {
   color: rgb(206, 185, 65);
 }
+
+.languages {
+  padding: 0.2rem;
+}
