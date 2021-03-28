@@ -30,8 +30,8 @@ class Box extends React.Component {
             {properties.description.split("/").map((descrip, i) => {
               return <p className="left add-padding">{descrip}</p>;
             })}
-            <hr />
-            <h4 className="proudest-style">Proudest Accomplishments:</h4>
+            {/* <hr />
+            <h4 className="proudest-style">Proudest Accomplishments:</h4> */}
           </>
         ) : (
           <hr />
