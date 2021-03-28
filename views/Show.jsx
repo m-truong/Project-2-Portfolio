@@ -18,12 +18,12 @@ class Show extends React.Component {
       <Layout title={""}>
         <Container className="vertical-buffer">
           <Row className="top-buffer justify-content-center">
-            <Col md={7}>
+            <Col md={6}>
               <div className="box-style">
                 <img className="image" src={item.image} alt="img" />
               </div>
             </Col>
-            <Col md={5}>
+            <Col md={6}>
               <Box item={item} />
             </Col>
           </Row>

@@ -38,7 +38,7 @@ class ProjectPage extends React.Component {
                         {project.languages.split("/").map((language, i) => {
                           return language[0] === "f" ? (
                             <span>
-                              <i class={language}/>{" "}
+                              <i class={language} />{" "}
                             </span>
                           ) : (
                             <span className="languages">{language} |</span>
@@ -52,8 +52,11 @@ class ProjectPage extends React.Component {
                         href={`/projects/${project._id}`}
                         variant="primary"
                       >
-                        <i class="fas fa-info-circle" /> Project Info
+                        <i className="fas fa-info-circle" /> See Project Details
                       </Button>
+
+                      {/* Add shorter description here! */}
+                      <div className="short-info">{project.info}</div>
                     </Card.Body>
                   </Card>
                 );

@@ -9,26 +9,34 @@ class Box extends React.Component {
       <div className="box-style">
         <h1 className="smaller-text">{properties.title}</h1>
         {properties.date ? <h3>{properties.date}</h3> : ""}
+        {properties.languages && properties.description ? (
+          <>
+            <div className="built-with-div">
+              <span>Built using: </span>
+              <br />
+              <div className="languages-left-align">
+                {properties.languages.split("/").map((language, i) => {
+                  return language[0] === "f" ? (
+                    <span>
+                      <i class={language} />{" "}
+                    </span>
+                  ) : (
+                    <span className="languages">{language} |</span>
+                  );
+                })}{" "}
+              </div>
+            </div>
 
-        <p>Built with: {} </p>
-
-        {/* <div className="languages-div">
-          {project.languages.split("/").map((language, i) => {
-            return language[0] === "f" ? (
-              <span>
-                <i class={language} />{" "}
-              </span>
-            ) : (
-              <span className="languages">{language} |</span>
-            );
-          })}
-        </div> */}
-
-        {/* .split.map over paragraph description and <p> */}
-        {properties.description.split("/").map((descrip, i) => {
-          return <p className="left add-padding">{descrip}</p>;
-        })}
-        {/* <p className="left add-padding">{properties.description}</p> */}
+            {properties.description.split("/").map((descrip, i) => {
+              return <p className="left add-padding">{descrip}</p>;
+            })}
+            <hr />
+            <h4 className="proudest-style">Proudest Accomplishments:</h4>
+          </>
+        ) : (
+          <hr />
+        )}
+        {properties.paragraph ? <p className="blog-paragraph">{properties.paragraph}</p> : ""}
         {properties.github ? (
           <>
             <hr />

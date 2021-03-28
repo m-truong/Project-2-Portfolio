@@ -6,7 +6,7 @@ const projectSchema = new mongoose.Schema({
     github: String,
     heroku: String,
     image: String,
-    icons: String,
+    info: String,
     languages: String,
     // Add new required document field? for FontAwesome Icons
 });

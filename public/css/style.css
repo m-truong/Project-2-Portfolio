@@ -138,6 +138,7 @@ div.left {
   background-color: transparent !important;;
   color: gray !important;
   margin: 1rem;
+  /* font-weight: 900 !important; */
 }
 .button-style:hover, .button-style:active {
   background-color:whitesmoke !important;
@@ -154,8 +155,9 @@ div.left {
 }
 
 .title-text-size {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  font-style: italic;
   transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -165,6 +167,8 @@ div.left {
 
 .smaller-text {
   font-size: 2rem;
+  padding: 0.8rem;
+  font-style: italic;
 }
 .resume-link {
   font-size: 1.1rem;
@@ -176,7 +180,7 @@ div.left {
 
 .languages-div {
   margin-top: 2rem;
-  /* margin-bottom: 1rem; */
+  /* width: 90%; */
 }
 
 .languages {
@@ -184,4 +188,27 @@ div.left {
   font-size: 1rem;
   padding: 0.4rem;
   /* font-style: italic; */
+}
+
+.built-with-div {
+  padding: 1.5rem;
+}
+
+.short-info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.proudest-style {
+  /* text-align: left; */
+  font-style: italic;
+}
+
+.languages-left-align {
+  text-align: left;
+}
+
+.blog-paragraph {
+  text-align: left;
+  padding: 1rem;
 }
